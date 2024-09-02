@@ -1,0 +1,27 @@
+{
+  "name": "al balad",
+  "menu": {
+    "title": "Menu",
+    "sandwichs": "Sandwichs",
+    "plate": "Assiettes",
+    "shish": "Shish Taouk",
+    "gyros": "Gyros",
+    "souvlaki": "Souvlaki",
+    "merguez": "Merguez",
+    "falafel": "Falafel",
+    "mixte": "Mixte",
+    "chickenSalad": "Salade au Poulet",
+    "merguezSalad": "Salade à la Merguez",
+    "souvlakiSalad": "Salade au Souvlaki",
+    "falafelSalad": "Salade aux Falafel",
+    "vineSalad": "Salade de Vigne",
+    "fourSalad": "Quatre Salades"
+  },
+  "info": {
+    "title": "Info",
+    "address": "269 Rue Saint-Joseph E, Québec, QC G1K 3B1",
+    "openingHours": "Sunday: Closed\nMonday: 11h00-21h00\nTuesday: 11h00-21h00\nWednesday: 11h00-19h30\nThursday: 11h00-21h00\nFriday: 11h00-21h00\nSaturday: 11h00-21h00"
+  },
+  "subtitle": "Découvrez Notre Cuisine",
+  "copyright": "© 2024 Enzo Doguereau, tous droits réservés."
+}
