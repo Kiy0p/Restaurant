@@ -18,10 +18,14 @@
     "fourSalad": "Four Salad"
   },
   "info": {
-    "title": "Info",
-    "address": "269 Rue Saint-Joseph E, Québec, QC G1K 3B1",
-    "openingHours": "Sunday: Closed\nMonday: 11h00-21h00\nTuesday: 11h00-21h00\nWednesday: 11h00-19h30\nThursday: 11h00-21h00\nFriday: 11h00-21h00\nSaturday: 11h00-21h00"
-  },
+    "title": "Contact",
+    "addressTitle": "Address",
+    "address": "269 Rue Saint-Joseph E,\nQuébec, QC G1K 3B1",
+    "contactTitle": "Contact",
+    "contactPhone": "(418) 522-0101",
+    "openingHoursTitle": "Opening hours",
+    "openingDays": "Sunday:\nMonday:\nTuesday:\nWednesday:\nThursday:\nFriday:\nSaturday:",
+    "openingHours": "closed\n11h00-21h00\n11h00-21h00\n11h00-19h30\n11h00-21h00\n11h00-21h00\n11h00-21h00"  },
   "subtitle": "Discover Our Cuisine",
   "copyright": "© 2024 Enzo Doguereau, All rights reserved."
 }

@@ -1,17 +1,12 @@
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Image from "../library/Image.tsx";
 import React from "react";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
-import { useTheme } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { t } = useTranslation();
-  const theme = useTheme();
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -35,7 +30,6 @@ const Header = () => {
           <StyledButton onClick={() => scrollToSection("menu")}>
             Menu
           </StyledButton>
-          <StyledButton>Commander</StyledButton>
           <StyledButton onClick={() => scrollToSection("info")}>
             Info
           </StyledButton>

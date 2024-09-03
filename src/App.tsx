@@ -5,15 +5,20 @@ import Box from "@mui/material/Box";
 import Footer from "./components/Footer.tsx";
 import Header from "./components/Header.tsx";
 import React from "react";
+import { styled } from "@mui/system";
 
 const App = () => {
   return (
-    <Box>
+    <StyledBox>
       <Header />
       <Body />
       <Footer />
-    </Box>
+    </StyledBox>
   );
 };
+
+const StyledBox = styled(Box)(({ theme }) => ({
+  backgroundColor: theme.palette.main,
+}));
 
 export default App;
