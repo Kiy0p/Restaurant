@@ -8,10 +8,6 @@ import { styled } from "@mui/system";
 import { useTheme } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
 
-enum options {
-  VEGAN,
-}
-
 const Menu = () => {
   const { t } = useTranslation();
   const theme = useTheme();
@@ -27,32 +23,32 @@ const Menu = () => {
         gap={4}
       >
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/shish_taouk.jpg"}
           title={t("menu.shish")}
           subtitle={"test subtitle"}
         />
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/shish_merguez.jpeg"}
           title={t("menu.merguez")}
           subtitle={"test subtitle"}
         />
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/shish_gyros.jpg"}
           title={t("menu.gyros")}
           subtitle={"test subtitle"}
         />
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/shish_falafel.jpg"}
           title={t("menu.falafel")}
           subtitle={"test subtitle"}
         />
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/shish_souvlaki.jpg"}
           title={t("menu.souvlaki")}
           subtitle={"test subtitle"}
         />
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/shish_mixte.jpg"}
           title={t("menu.mixte")}
           subtitle={"test subtitle"}
         />
