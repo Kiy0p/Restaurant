@@ -61,34 +61,34 @@ const Menu = () => {
         gap={4}
       >
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/plate_chicken.jpg"}
           title={t("menu.chickenSalad")}
           subtitle={"test subtitle"}
         />
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/plate_falafel.jpg"}
           title={t("menu.falafelSalad")}
           subtitle={"test subtitle"}
           vegan={true}
         />
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/plate_merguez.jpg"}
           title={t("menu.merguezSalad")}
           subtitle={"test subtitle"}
         />
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/plate_vine.jpg"}
           title={t("menu.vineSalad")}
           subtitle={"test subtitle"}
           vegan={true}
         />
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/plate_souvlaki.jpg"}
           title={t("menu.souvlakiSalad")}
           subtitle={"test subtitle"}
         />
         <MenuItem
-          src={"resources/menu/kebab.png"}
+          src={"resources/menu/plate_salad.jpg"}
           title={t("menu.fourSalad")}
           subtitle={"test subtitle"}
           vegan={true}
