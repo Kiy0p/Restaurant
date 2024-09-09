@@ -20,7 +20,7 @@ const Body = () => {
             src={imageSrc}
             width={"100%"}
             height={"100%"}
-            sx={{ padding: "2px" }}
+            sx={{ padding: "2px", overflow: "auto" }}
           ></Image>
         ))}
       </StyledBox>

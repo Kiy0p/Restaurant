@@ -1,27 +1,20 @@
 import Box from "@mui/material/Box";
-import ImageList from "@mui/material/ImageList";
+import ImageCatalog from "../../library/ImageCatalog.tsx";
 import MenuItem from "./MenuItem.tsx";
 import React from "react";
 import Title from "../../library/Title.tsx";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
-import { useTheme } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
 
 const Menu = () => {
   const { t } = useTranslation();
-  const theme = useTheme();
 
   return (
     <StyledBox id="menu">
       <Title>{t("menu.title")}</Title>
       <StyledTypography variant="h3">{t("menu.sandwichs")}</StyledTypography>
-      <ImageList
-        cols={3}
-        variant="masonry"
-        sx={{ margin: theme.spacing(5) }}
-        gap={4}
-      >
+      <ImageCatalog>
         <MenuItem
           src={"resources/menu/shish_taouk.jpg"}
           title={t("menu.shish")}
@@ -52,14 +45,9 @@ const Menu = () => {
           title={t("menu.mixte")}
           subtitle={"test subtitle"}
         />
-      </ImageList>
+      </ImageCatalog>
       <StyledTypography variant="h3">{t("menu.plate")}</StyledTypography>
-      <ImageList
-        cols={3}
-        variant="masonry"
-        sx={{ margin: theme.spacing(5) }}
-        gap={4}
-      >
+      <ImageCatalog>
         <MenuItem
           src={"resources/menu/plate_chicken.jpg"}
           title={t("menu.chickenSalad")}
@@ -93,7 +81,7 @@ const Menu = () => {
           subtitle={"test subtitle"}
           vegan={true}
         />
-      </ImageList>
+      </ImageCatalog>
     </StyledBox>
   );
 };

@@ -15,7 +15,12 @@ interface Props {
 const MenuItem = ({ src, title, subtitle, vegan = false }: Props) => {
   return (
     <ImageListItem>
-      <Image src={src} width={"100%"} height={theme.spacing(60)}></Image>
+      <Image
+        src={src}
+        width={"100%"}
+        height={"100%"}
+        sx={{ overflow: "hidden" }}
+      ></Image>
       <ImageListItemBar
         title={title}
         subtitle={subtitle}
