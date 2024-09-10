@@ -23,22 +23,27 @@ const Header = () => {
       <StyledToolbar>
         <StyledBox>
           <Typography variant="h5" color="black">
-            {t("name")}
+            {t("header.name")}
           </Typography>
         </StyledBox>
         <StyledBox>
           <StyledButton onClick={() => scrollToSection("menu")}>
-            Menu
+            {t("header.menu")}
           </StyledButton>
           <StyledButton onClick={() => scrollToSection("info")}>
-            Info
+            {t("header.info")}
+          </StyledButton>
+          <StyledButton onClick={() => scrollToSection("info")}>
+            {t("header.order")}
           </StyledButton>
         </StyledBox>
       </StyledToolbar>
       <StyledWelcome>
-        <Typography color="black">Découvrez notre cuisine</Typography>
+        <Typography color="black" variant="h5">
+          {t("header.discover")}
+        </Typography>
         <Typography color="black" variant="h1">
-          Bienvenue
+          {t("header.welcome")}
         </Typography>
       </StyledWelcome>
     </StyledHeader>

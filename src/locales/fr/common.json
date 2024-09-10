@@ -1,5 +1,12 @@
 {
-  "name": "al balad",
+  "header": {
+    "name": "al balad",
+    "menu": "Menu",
+    "info": "Info",
+    "order": "Commander",
+    "discover": "Découvrez notre cuisine",
+    "welcome": "Bienvenue"
+  },
   "menu": {
     "title": "Menu",
     "sandwichs": "Sandwichs",
@@ -21,7 +28,7 @@
     "title": "Nous contacter",
     "addressTitle": "Adresse",
     "address": "269 Rue Saint-Joseph E,\nQuébec, QC G1K 3B1",
-    "contactTitle": "Contact",
+    "contactOrder": "Commander",
     "contactPhone": "(418) 522-0101",
     "openingHoursTitle": "Heures d'ouverture",
     "openingDays": "Lundi:\nMardi:\nMercredi:\nJeudi:\nVendredi:\nSamedi:\nDimanche:",

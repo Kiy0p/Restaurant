@@ -21,7 +21,7 @@
     "title": "Contact",
     "addressTitle": "Address",
     "address": "269 Rue Saint-Joseph E,\nQuébec, QC G1K 3B1",
-    "contactTitle": "Contact",
+    "contactOrder": "Order",
     "contactPhone": "(418) 522-0101",
     "openingHoursTitle": "Opening hours",
     "openingDays": "Sunday:\nMonday:\nTuesday:\nWednesday:\nThursday:\nFriday:\nSaturday:",

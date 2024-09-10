@@ -17,7 +17,7 @@ const Info = () => {
     <StyledContact id="info">
       <Title>{t("info.title")}</Title>
       <StyledInfo>
-        <Box>
+        <Box sx={{paddingRight: theme.spacing(4)}}>
           <Typography variant="h3" sx={{ whiteSpace: "pre-line" }}>
             {t("info.addressTitle")}
           </Typography>
@@ -26,7 +26,7 @@ const Info = () => {
           </Typography>
         </Box>
         <Box display="flex" flexDirection="column" gap={theme.spacing(1)}>
-          <Typography variant="h3">{t("info.contactTitle")}</Typography>
+          <Typography variant="h3">{t("info.contactOrder")}</Typography>
           <Box display="flex">
             <PhoneIcon />
             <Typography>{t("info.contactPhone")}</Typography>
@@ -44,7 +44,7 @@ const Info = () => {
             url="https://www.ubereats.com/ca/store/albalade/Ike0fDkWTMe_nUsHEaYszg?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google"
           />
         </Box>
-        <Box>
+        <Box sx={{paddingLeft: theme.spacing(4)}}>
           <Typography variant="h3">{t("info.openingHoursTitle")}</Typography>
           <Box display="flex">
             <Typography
@@ -74,9 +74,10 @@ const StyledContact = styled(Box)(({ theme }) => ({
   marginBottom: theme.spacing(4),
 }));
 
-const StyledInfo = styled(Box)(({ theme }) => ({
+const StyledInfo = styled(Box)(() => ({
   display: "flex",
   justifyContent: "space-evenly",
+  flexWrap: "wrap"
 }));
 
 const StyledBox = styled(Box)(({ theme }) => ({
