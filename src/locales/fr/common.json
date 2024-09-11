@@ -34,6 +34,8 @@
     "openingDays": "Lundi:\nMardi:\nMercredi:\nJeudi:\nVendredi:\nSamedi:\nDimanche:",
     "openingHours": "11h00-21h00\n11h00-21h00\n11h00-19h30\n11h00-21h00\n11h00-21h00\n11h00-21h00\nfermé"
   },
-  "subtitle": "Découvrez Notre Cuisine",
-  "copyright": "© 2024 Enzo Doguereau, tous droits réservés."
+  "footer": {
+    "copyright": "© 2024 Enzo Doguereau, All rights reserved.",
+    "creation": "Site créé avec React et MUI. Pour plus de créations originales, envoyez un mail à edoguereau@yahoo.fr"
+  }
 }

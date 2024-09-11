@@ -1,5 +1,12 @@
 {
-  "name": "al balad",
+  "header": {
+    "name": "al balad",
+    "menu": "Menu",
+    "info": "Info",
+    "order": "Order",
+    "discover": "Discover lebanese cuisine",
+    "welcome": "welcome"
+  },
   "menu": {
     "title": "Menu",
     "sandwichs": "Sandwichs",
@@ -26,6 +33,8 @@
     "openingHoursTitle": "Opening hours",
     "openingDays": "Sunday:\nMonday:\nTuesday:\nWednesday:\nThursday:\nFriday:\nSaturday:",
     "openingHours": "closed\n11h00-21h00\n11h00-21h00\n11h00-19h30\n11h00-21h00\n11h00-21h00\n11h00-21h00"  },
-  "subtitle": "Discover Our Cuisine",
-  "copyright": "© 2024 Enzo Doguereau, All rights reserved."
+  "footer": {
+    "copyright": "© 2024 Enzo Doguereau, All rights reserved.",
+    "creation": "Site created with React and MUI. For more original creations, send email to edoguereau@yahoo.fr"
+  }
 }

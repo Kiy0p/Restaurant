@@ -12,13 +12,18 @@ const Footer = () => {
 
   return (
     <StyledBox>
-      <Image
-        src="./resources/logo.jpeg"
-        height={theme.spacing(10)}
-        width={theme.spacing(10)}
-      />
+      <Box sx={{border: 1, borderColor: "white"}}>
+        <Image
+          src="./resources/logo/lorenzo.png"
+          height={theme.spacing(14)}
+          width={theme.spacing(14)}
+        />
+      </Box>
       <Box mt={theme.spacing(2)}>
-        <Typography color="white">{t("copyright")}</Typography>
+        <Typography color="white">{t("footer.copyright")}</Typography>
+      </Box>
+      <Box>
+        <Typography color="white">{t("footer.creation")}</Typography>
       </Box>
     </StyledBox>
   );
