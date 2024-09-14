@@ -25,7 +25,6 @@ const MenuItem = ({ src, title, subtitle, vegan = false }: Props) => {
         title={title}
         subtitle={subtitle}
         position="bottom"
-        sx={{ bottom: 4 }}
         actionIcon={
           vegan && (
             <SpaRoundedIcon
