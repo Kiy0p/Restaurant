@@ -32,7 +32,7 @@ const Info = () => {
             <Typography>{t("info.contactPhone")}</Typography>
           </Box>
           <OrderLink
-            src="resources/logo/door_dash.jpeg"
+            src="resources/logo/door_dash.jpg"
             url="https://www.doordash.com/store/restaurant-al-balad-qu%C3%A9bec-1253726/?pickup=true&utm_campaign=gpa"
           />
           <OrderLink

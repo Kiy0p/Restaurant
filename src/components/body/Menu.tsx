@@ -21,7 +21,7 @@ const Menu = () => {
           subtitle={"test subtitle"}
         />
         <MenuItem
-          src={"resources/menu/shish_merguez.jpeg"}
+          src={"resources/menu/shish_merguez.jpg"}
           title={t("menu.merguez")}
           subtitle={"test subtitle"}
         />
