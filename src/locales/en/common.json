@@ -12,17 +12,29 @@
     "sandwichs": "Sandwichs",
     "plate": "Plates",
     "shish": "Shish Taouk",
+    "shish_sub": "9.49 solo | 15.99 combo",
     "gyros": "Gyros",
+    "gyros_sub": "9.49 solo | 15.99 combo",
     "souvlaki": "Souvlaki",
+    "souvlaki_sub": "9.49 solo | 15.99 combo",
     "merguez": "Merguez",
+    "merguez_sub": "10.49 solo | 16.99 combo",
     "falafel": "Falafel",
+    "falafel_sub": "8.75 solo | 13.99 combo",
     "mixte": "Mixed",
+    "mixte_sub": "10.49 solo | 16.99 combo",
     "chickenSalad": "Chicken Salad",
+    "chickenSalad_sub": "13.99",
     "merguezSalad": "Merguez Salad",
+    "merguezSalad_sub": "16.49",
     "souvlakiSalad": "Souvlaki Salad",
+    "souvlakiSalad_sub": "16.49",
     "falafelSalad": "Falafel Salad",
+    "falafelSalad_sub": "13.49",
     "vineSalad": "Vine Salad",
-    "fourSalad": "Four Salad"
+    "vineSalad_sub": "7.99",
+    "fourSalad": "Four Salad",
+    "fourSalad_sub": "8.69"
   },
   "info": {
     "title": "Contact",
@@ -32,7 +44,8 @@
     "contactPhone": "(418) 522-0101",
     "openingHoursTitle": "Opening hours",
     "openingDays": "Sunday:\nMonday:\nTuesday:\nWednesday:\nThursday:\nFriday:\nSaturday:",
-    "openingHours": "closed\n11h00-21h00\n11h00-21h00\n11h00-19h30\n11h00-21h00\n11h00-21h00\n11h00-21h00"  },
+    "openingHours": "closed\n11h00-21h00\n11h00-21h00\n11h00-19h30\n11h00-21h00\n11h00-21h00\n11h00-21h00"
+  },
   "footer": {
     "copyright": "© 2024 Enzo Doguereau, All rights reserved.",
     "creation": "Site created with React and MUI. For more original creations, send email to edoguereau@yahoo.fr"

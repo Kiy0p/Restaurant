@@ -29,7 +29,7 @@ const MenuItem = ({ src, title, subtitle, vegan = false }: Props) => {
           vegan && (
             <SpaRoundedIcon
               style={{
-                color: theme.palette.success.main,
+                color: theme.palette.success.light,
                 height: theme.spacing(4),
                 width: theme.spacing(4),
               }}

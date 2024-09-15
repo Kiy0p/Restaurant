@@ -5,7 +5,7 @@ import React from "react";
 import { useTheme } from "@mui/material/styles";
 
 interface Props {
-  children: string | JSX.Element | JSX.Element[];
+  children: React.ReactNode | React.ReactNode[];
 }
 
 const ImageListCols = (): number => {
@@ -59,7 +59,7 @@ const ImageCatalog = ({ children }: Props) => {
       sx={{ margin: theme.spacing(5) }}
       gap={4}
     >
-      {children}
+      {React.Children.toArray(children)}
     </ImageList>
   );
 };
