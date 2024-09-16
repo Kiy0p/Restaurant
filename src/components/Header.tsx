@@ -52,7 +52,6 @@ const Header = () => {
 
 const StyledHeader = styled(Box)(({ theme }) => ({
   height: theme.spacing(30),
-  backgroundColor: theme.palette.main,
   display: "flex",
   flexDirection: "column",
 }));

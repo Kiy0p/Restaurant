@@ -13,7 +13,7 @@ const Menu = () => {
   const { t } = useTranslation();
 
   return (
-    <StyledBox id="menu">
+    <Box id="menu">
       <Title>{t("menu.title")}</Title>
       <StyledTypography variant="h3">{t("menu.sandwichs")}</StyledTypography>
       <ImageCatalog>
@@ -37,7 +37,7 @@ const Menu = () => {
           />
         ))}
       </ImageCatalog>
-    </StyledBox>
+    </Box>
   );
 };
 
@@ -45,8 +45,5 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
   marginLeft: theme.spacing(2),
 }));
 
-const StyledBox = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.main,
-}));
 
 export default Menu;
