@@ -18,8 +18,7 @@ const App = () => {
 };
 
 const StyledBox = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.main,
-  backgroundImage: `url(resources/background_test.png)`
+  backgroundImage: `url(resources/background_test.png)`,
 }));
 
 export default App;

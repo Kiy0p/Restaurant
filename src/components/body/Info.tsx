@@ -71,7 +71,7 @@ const Info = () => {
 };
 
 const StyledContact = styled(Box)(({ theme }) => ({
-  marginBottom: theme.spacing(4),
+  marginBottom: theme.spacing(4)
 }));
 
 const StyledInfo = styled(Box)(() => ({
