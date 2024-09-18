@@ -14,7 +14,7 @@ const OrderLink = ({ url, src }: Props) => {
   return (
     <Box>
       <Link target="_blank" href={url} underline="none" rel="noopener">
-        <Image src={src} height={theme.spacing(6)} width={theme.spacing(6)} />
+        <Image src={src} height={theme.spacing(10)} width={theme.spacing(10)} />
       </Link>
     </Box>
   );

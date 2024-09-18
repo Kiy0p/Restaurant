@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import NavigationButton from "../library/NavigationButton.tsx";
 import React from "react";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
@@ -7,16 +7,6 @@ import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { t } = useTranslation();
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <StyledHeader>
@@ -27,15 +17,9 @@ const Header = () => {
           </Typography>
         </StyledBox>
         <StyledBox>
-          <StyledButton onClick={() => scrollToSection("menu")}>
-            {t("header.menu")}
-          </StyledButton>
-          <StyledButton onClick={() => scrollToSection("info")}>
-            {t("header.info")}
-          </StyledButton>
-          <StyledButton onClick={() => scrollToSection("info")}>
-            {t("header.order")}
-          </StyledButton>
+          <NavigationButton link="menu" content={t("header.menu")} />
+          <NavigationButton link="info" content={t("header.info")} />
+          <NavigationButton link="info" content={t("header.order")} />
         </StyledBox>
       </StyledToolbar>
       <StyledWelcome>
@@ -68,14 +52,6 @@ const StyledBox = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
-  marginLeft: theme.spacing(1),
-}));
-
-const StyledButton = styled(Button)(({ theme }) => ({
-  color: "black",
-  backgroundColor: "transparent",
-  fontWeight: "bold",
-  fontSize: theme.spacing(2),
   marginLeft: theme.spacing(1),
 }));
 

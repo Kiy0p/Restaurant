@@ -17,7 +17,7 @@ const Info = () => {
     <StyledContact id="info">
       <Title>{t("info.title")}</Title>
       <StyledInfo>
-        <Box sx={{paddingRight: theme.spacing(4)}}>
+        <Box sx={{ paddingRight: theme.spacing(4) }}>
           <Typography variant="h3" sx={{ whiteSpace: "pre-line" }}>
             {t("info.addressTitle")}
           </Typography>
@@ -31,20 +31,22 @@ const Info = () => {
             <PhoneIcon />
             <Typography>{t("info.contactPhone")}</Typography>
           </Box>
-          <OrderLink
-            src="resources/logo/door_dash.jpg"
-            url="https://www.doordash.com/store/restaurant-al-balad-qu%C3%A9bec-1253726/?pickup=true&utm_campaign=gpa"
-          />
-          <OrderLink
-            src="resources/logo/skip.png"
-            url="https://www.skipthedishes.com/restaurant-al-balade?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder"
-          />
-          <OrderLink
-            src="resources/logo/uber_eats.png"
-            url="https://www.ubereats.com/ca/store/albalade/Ike0fDkWTMe_nUsHEaYszg?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google"
-          />
+          <Box display="flex" flexDirection="row" justifyContent="space-around" sx={{paddingTop: theme.spacing(2)}}>
+            <OrderLink
+              src="resources/logo/door_dash.jpg"
+              url="https://www.doordash.com/store/restaurant-al-balad-qu%C3%A9bec-1253726/?pickup=true&utm_campaign=gpa"
+            />
+            <OrderLink
+              src="resources/logo/skip.png"
+              url="https://www.skipthedishes.com/restaurant-al-balade?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder"
+            />
+            <OrderLink
+              src="resources/logo/uber_eats.png"
+              url="https://www.ubereats.com/ca/store/albalade/Ike0fDkWTMe_nUsHEaYszg?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google"
+            />
+          </Box>
         </Box>
-        <Box sx={{paddingLeft: theme.spacing(4)}}>
+        <Box sx={{ paddingLeft: theme.spacing(4) }}>
           <Typography variant="h3">{t("info.openingHoursTitle")}</Typography>
           <Box display="flex">
             <Typography
@@ -71,13 +73,13 @@ const Info = () => {
 };
 
 const StyledContact = styled(Box)(({ theme }) => ({
-  marginBottom: theme.spacing(4)
+  marginBottom: theme.spacing(4),
 }));
 
 const StyledInfo = styled(Box)(() => ({
   display: "flex",
   justifyContent: "space-evenly",
-  flexWrap: "wrap"
+  flexWrap: "wrap",
 }));
 
 const StyledBox = styled(Box)(({ theme }) => ({
