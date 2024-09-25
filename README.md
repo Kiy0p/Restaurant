@@ -11,3 +11,4 @@ Restaurant landing page in React with mui
 6. [] Ajouter des effets courbes aux bouttons pour rappeler le background.
 7. [] Changer le font. Trouver le meilleur.
 8. [] Personnaliser le nom de domain
+9. [] Ajouter du padding au dessus du logo

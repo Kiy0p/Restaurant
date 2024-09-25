@@ -20,13 +20,24 @@ const NavigationButton = ({ link, content }: Props) => {
   };
 
   return (
-    <Box>
-        <StyledButton onClick={() => scrollToSection(link)}>{content}</StyledButton>
-        <svg height="50" width="80" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0 0 C 0 36 72 36 72 0 C 72 -24 12 -24 12 0 C 12 24 60 24 60 0 C 60 -12 24 -12 24 0 C 24 12 48 12 48 0"
-            fill="none" stroke="#2ad658" stroke-width="2" transform="translate(0, 20)" />
-        </svg>
-    </Box>
+      <Box sx={{ position: "relative", display: "inline-block" }}>
+        <StyledButton onClick={() => scrollToSection(link)} sx={{zIndex: 3}}>{content}</StyledButton>
+        <Box
+            component="svg"
+            sx={{
+              position: "absolute",
+              top: "0%",
+              left: "0%",
+              transform: "translate(0%, 0%)"
+            }}
+            height="100%"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M 0 14 C 0 41 54 41 54 14 C 54 -4 9 -4 9 14 C 9 32 45 32 45 14 C 45 5 18 5 18 14 C 18 23 36 23 36 14"
+                fill="none" stroke="#2ad658" stroke-width="2"/>
+        </Box>
+      </Box>
   );
 };
 
