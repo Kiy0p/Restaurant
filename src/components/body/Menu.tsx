@@ -45,5 +45,4 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
   marginLeft: theme.spacing(2),
 }));
 
-
 export default Menu;

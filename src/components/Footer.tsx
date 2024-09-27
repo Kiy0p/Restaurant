@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <StyledBox>
-      <Box sx={{border: 1, borderColor: "white"}}>
+      <Box sx={{ border: 1, borderColor: "white" }}>
         <Image
           src="./resources/logo/lorenzo.png"
           height={theme.spacing(14)}

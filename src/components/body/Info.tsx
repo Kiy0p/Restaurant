@@ -31,7 +31,12 @@ const Info = () => {
             <PhoneIcon />
             <Typography>{t("info.contactPhone")}</Typography>
           </Box>
-          <Box display="flex" flexDirection="row" justifyContent="space-around" sx={{paddingTop: theme.spacing(2)}}>
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent="space-around"
+            sx={{ paddingTop: theme.spacing(2) }}
+          >
             <OrderLink
               src="resources/logo/door_dash.jpg"
               url="https://www.doordash.com/store/restaurant-al-balad-qu%C3%A9bec-1253726/?pickup=true&utm_campaign=gpa"
