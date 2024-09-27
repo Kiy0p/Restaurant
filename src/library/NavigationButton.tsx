@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { keyframes } from "@emotion/react";
 import { styled } from "@mui/system";
 
 interface Props {
@@ -10,8 +11,6 @@ interface Props {
 }
 
 const NavigationButton = ({ link, content }: Props) => {
-  const buttonRef = useRef<HTMLButtonElement | null>(null);
-  const [transform, setTransform] = useState("translate(10 4)");
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -32,12 +31,12 @@ const NavigationButton = ({ link, content }: Props) => {
         component="svg"
         sx={{
           position: "absolute",
-          top: "0%",
-          left: "0%",
+          top: "0",
+          left: "0",
         }}
         height="100%"
         width="100%"
-        backgroundColor="red"
+        viewBox="0 0 54 41"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -45,7 +44,8 @@ const NavigationButton = ({ link, content }: Props) => {
           fill="none"
           stroke="#2ad658"
           stroke-width="2"
-          transform={transform}
+          strokeDasharray="240"
+          strokeDashoffset="1000"
         />
       </Box>
     </Box>
@@ -58,10 +58,29 @@ const StyledButton = styled(Button)(({ theme }) => ({
   fontWeight: "bold",
   fontSize: theme.spacing(2),
   marginLeft: theme.spacing(1),
+  "@keyframes dash": {
+    from: {
+      opacity: 1,
+      transform: "scale(1)"
+    },
+    to: {
+      opacity: 0,
+      transform: "scale(2)"
+    }
+  },
   "&:hover": {
-    backgroundColor: "#fff",
-    color: "#3c52b2",
+    animation: "dash 1s infinite ease"
   },
 }));
+
+const dash = keyframes`
+  0% {
+    stroke-dashoffset: 10;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+    backgroundColor: "red";
+  }
+`;
 
 export default NavigationButton;
