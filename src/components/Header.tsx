@@ -17,9 +17,9 @@ const Header = () => {
           </Typography>
         </StyledBox>
         <StyledBox>
-          <NavigationButton link="menu" content={t("header.menu")} />
-          <NavigationButton link="info" content={t("header.info")} />
-          <NavigationButton link="info" content={t("header.order")} />
+          <NavigationButton link="menu" text={t("header.menu")} />
+          <NavigationButton link="info" text={t("header.info")} />
+          <NavigationButton link="info" text={t("header.order")} />
         </StyledBox>
       </StyledToolbar>
       <StyledWelcome>
