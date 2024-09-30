@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Size, useWindow } from "./hooks/useWindow.ts";
 
 import Box from "@mui/material/Box";
 import { PropsWithChildren } from "react";
@@ -8,8 +9,11 @@ import { useTheme } from "@mui/material/styles";
 
 const Title = ({ children }: PropsWithChildren) => {
   const theme = useTheme();
+  const windowSize = useWindow();
   const pathRef = useRef<SVGPathElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const svgSpacing = windowSize === Size.Small || windowSize === Size.XSmall ? -3 : -4
+  const svgWidth = windowSize === Size.Small || windowSize === Size.XSmall ? "50%" : "30%"
 
   const createObserver = (): IntersectionObserver => {
     return new IntersectionObserver(
@@ -20,7 +24,7 @@ const Title = ({ children }: PropsWithChildren) => {
       },
       { threshold: 0.5 } // Adjust the threshold as needed
     );
-  }
+  };
 
   useEffect(() => {
     const observer = createObserver();
@@ -42,11 +46,11 @@ const Title = ({ children }: PropsWithChildren) => {
       <StyledTypography variant="h1" align="center">
         {children}
       </StyledTypography>
-      <StyledBox sx={{ marginTop: theme.spacing(-4) }}>
+      <StyledBox sx={{ marginTop: theme.spacing(svgSpacing) }}>
         <Box
           component="svg"
           height="20%"
-          width="30%"
+          width={svgWidth}
           viewBox="0 0 65 10"
           xmlns="http://www.w3.org/2000/svg"
         >

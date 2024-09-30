@@ -11,6 +11,7 @@ Restaurant landing page in React with mui
 5. [X] Ajouter des courbes aux titres pour rappeler le background.
 6. [X] Ajouter des effets courbes aux bouttons pour rappeler le background.
 7. [] Changer le font. Trouver le meilleur.
-8. [] Personnaliser le nom de domain.
-9. [] Ajouter du padding au dessus du logo.
-10. [] Remplacer "Bienvenue" par bienvenue par Al Balad.
+8. [-] Personnaliser le nom de domain.
+9. [X] Ajouter du padding au dessus du logo.
+10. [-] Remplacer "Bienvenue" par "Bienvenue à Al Balad".
+11. [X] Faire en sorte que ça soit bien responsive.
