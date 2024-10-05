@@ -21,7 +21,7 @@ const Menu = () => {
           <MenuItem
             key={sandwichs.src}
             src={sandwichs.src}
-            title={sandwichs.title}
+            title={t(sandwichs.title)}
             subtitle={t(sandwichs.subtitle)}
           />
         ))}
@@ -32,7 +32,7 @@ const Menu = () => {
           <MenuItem
             key={plates.src}
             src={plates.src}
-            title={plates.title}
+            title={t(plates.title)}
             subtitle={t(plates.subtitle)}
           />
         ))}
