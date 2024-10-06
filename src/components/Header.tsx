@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <StyledAppBar isAtTop={isAtTop} elevation={isAtTop ? 0 : 4}>
+      <StyledAppBar isAtTop={isAtTop} elevation={isAtTop ? 0 : 8}>
         <StyledToolbar>
           <StyledBox>
             <Typography variant="h5" color="black">

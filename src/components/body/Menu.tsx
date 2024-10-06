@@ -23,6 +23,7 @@ const Menu = () => {
             src={sandwichs.src}
             title={t(sandwichs.title)}
             subtitle={t(sandwichs.subtitle)}
+            vegan={sandwichs.vegan}
           />
         ))}
       </ImageCatalog>
@@ -34,6 +35,7 @@ const Menu = () => {
             src={plates.src}
             title={t(plates.title)}
             subtitle={t(plates.subtitle)}
+            vegan={plates.vegan}
           />
         ))}
       </ImageCatalog>
